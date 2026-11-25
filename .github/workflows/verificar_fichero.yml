@@ -1,0 +1,12 @@
+name: verificar fichero
+
+on:
+  workflow_dispatch:
+
+jobs:
+  comprobar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Existe fichero
+        run: test -f public/index.php
