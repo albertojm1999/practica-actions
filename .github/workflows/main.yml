@@ -1,0 +1,12 @@
+name: ejercicio 2
+on: 
+   push:
+   workflow_dispatch:
+
+jobs:
+    saludo:
+           runs-on: ubuntu-latest
+           steps:
+              - name: Comandos
+                run: whoami | ls -la
+   
