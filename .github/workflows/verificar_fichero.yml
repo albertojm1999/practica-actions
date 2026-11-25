@@ -8,5 +8,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Copio contenido
+        uses: actions/checkout@v7 
       - name: Existe fichero
         run: test -f public/index.php
