@@ -1,0 +1,10 @@
+name: Ejercicio 1
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  saludo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Saludar
+        run: echo "Hola desde GitHub Actions"
