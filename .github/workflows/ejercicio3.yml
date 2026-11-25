@@ -1,0 +1,17 @@
+name: Ejercicio3
+
+on:
+   push:
+   workflow_dispatch:
+
+jobs:
+   comprobar:
+      runs-on: ubuntu-latest
+
+
+      steps:
+         - name: Descargo el código
+           uses: actions/checkout@v7
+           
+         - name: Ver qué hay
+           run: ls -la
