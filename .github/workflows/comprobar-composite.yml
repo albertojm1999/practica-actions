@@ -11,4 +11,4 @@ jobs:
         uses: actions/checkout@v7
 
       - name: Ejecutar nuestra accion
-        uses: ./.github/actions/primer-action.yml
+        uses: ./.github/actions/accion-composite/action.yml
